@@ -1,0 +1,1 @@
+I use the selected folder when I want to migrate only database. While migrating, use php artisan migrate --path=/database/migrations/selected/

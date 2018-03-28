@@ -1,0 +1,267 @@
+/* CSS Document */
+
+/*copyright lynda.com 2012
+feel free to use these styles as you wish
+attribution would be nice, but not required
+*/
+
+/*reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+html {
+	background: rgb(65, 64, 66);
+}
+body {
+	font:  Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+article {
+	clear: both;
+	margin-bottom: 3px;
+}
+/*a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	background: url(../_images/diag_pattern.png);
+}
+p {
+	margin-bottom: 1em;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}*/
+/* Global classes */
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+/*.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}*/
+/* For IE 6/7 (trigger hasLayout) */
+/*.cf {
+    zoom:1;
+}
+.cr {
+	clear: right;
+}
+.cl {
+	clear: left;
+}
+.cb {
+	clear: both;
+}
+.nrm {
+	margin-right: 0;
+}
+.orange {
+	text-transform: uppercase;
+	color: rgb(251, 174, 44);
+	font-weight: bold;
+}
+.blue {
+	text-transform: uppercase;
+	color: rgb(2, 99, 174);
+	font-weight: bold;
+}
+.lavender {
+	text-transform: uppercase;
+	color: rgb(168, 88, 163);
+	font-weight: bold;
+}
+.more {
+	display: block;
+}*/
+body {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+article#mainContent {
+	/*float: left;*/
+	background: white;
+	width: 607px;
+  margin: 0 auto;
+	/*margin-top: 3px;*/
+	padding: 16px;
+}
+article#spotlight {
+	margin-bottom: 0;
+}
+aside {
+	float: right;
+	width: 318px;
+}
+footer {
+	clear: both;
+}
+
+/*Header styles*/
+.pageHeader h1{
+	width: 160px;
+	height: 150px;
+	text-indent: -9000em;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: black url(../_images/ralogo.png) no-repeat;
+	z-index: 5;
+	margin: 0;
+}
+.pageHeader h1 a {
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: 0;
+}
+
+
+article h1 {
+	font-weight: bold;
+	font-size: 2.8em;
+	color:#52514E;
+}
+article h2 {
+	font-size: 1.5em;
+	clear: both;
+  color: #52514E;
+}
+
+#mapCanvas {
+	border: 2px solid rgb(65,61,62);
+	margin-bottom: 2em;
+}
+
+fieldset {
+	border: none;
+	border-bottom: 1px solid rgb(2, 99, 174);
+	margin-bottom: 1em;
+	width: 486px;
+}
+fieldset:last-child {
+	border: none;
+}
+legend {
+	font-size: 1.4em;
+	color: rgb(251, 174, 44);
+}
+form {
+	margin-bottom: 1em;
+}
+form ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+form li {
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 0;
+	font-size: .9em;
+}
+
+label.text {
+	display: block;
+}
+input[type="text"], input[type="email"], input[type="password"],textarea, select {
+	border: none;
+	background-color: #D9D7D0;
+	width: 318px;
+	padding: .5em;
+	font-size: 1em;
+}
+textarea {
+	height: 128px;
+}
+input:focus, textarea:focus {
+	border: 2px solid rgb(181, 211, 56);
+}
+
+select {
+	width: 328px;
+}
+select[multiple]{
+	height: 162px;
+}
+
+.submit
+{
+	display: block;
+	margin-top: 2em;
+	width: 318px;
+	font-size: 1em;
+	padding: .5em;
+	background-color: #b5d338;
+	color: black;
+	border: none;
+	cursor: pointer;
+	}
+
+	#mainContent .post {
+	padding-bottom: 30px;
+	padding-right: 10px;
+}
+
+        label {
+            display: block;
+            padding-top: 1em;
+        }
+        input[type="submit"] {
+            display: block;
+            margin-top: 2em;
+            width: 318px;
+            font-size: 1em;
+            padding: .5em;
+            background-color: #b5d338;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        textarea {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+/* Tablet */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+	body {
+		width: 768px;
+	}
+	.pageHeader nav {
+		width: 600px;
+	}
+
+	#blogPage #contentWrapper {
+		background-position: -192px top;
+		width: 768px;
+	}
+	article#mainContent {
+		width: 415px;
+	}
+	article h1 {
+		font-size: 2.4em;
+	}
+
+	.pageHeader li {
+		margin-right: 25px;
+	}
+}
